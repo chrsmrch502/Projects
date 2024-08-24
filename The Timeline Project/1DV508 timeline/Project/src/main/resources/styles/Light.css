@@ -1,0 +1,125 @@
+.root, .eventEditor {
+    -fx-background-color: #f4f4f4;
+}
+
+.button, .toggle-button {
+    -fx-background-color: #1aa9cd;
+    -fx-background-radius: 222px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+.button:hover, .toggle-button:hover, .toggle-button:selected, .smallButton:hover, .popupButton:hover {
+    -fx-background-color: #126c82;
+}
+
+.check-box .box {
+    -fx-background-color: white;
+    -fx-border-color: grey;
+    -fx-border-radius: 3px;
+}
+
+.combo-box-base, .combo-box-base .list-cell {
+    -fx-background-radius: 5;
+}
+
+.date-picker-popup .button {
+    -fx-background-color: 0 0 0;
+    -fx-background-radius: 222;
+    -fx-color: transparent;
+}
+
+.date-picker-popup > * > .spinner > .button:hover, .date-picker-popup > * > .spinner > .button:armed {
+    -fx-color: 0;
+}
+
+.eventNode {
+    -fx-background-color: #1AA9CD;
+    -fx-effect: dropshadow(one-pass-box, #5969FF, 4, 0, 0, 0);
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+.eventNode:hover {
+    -fx-background-color: #1484a0;
+}
+
+.eventNode:pressed, .scroll-bar:horizontal .increment-button:pressed, .scroll-bar:horizontal .decrement-button:pressed,
+.scroll-bar:vertical .increment-button:pressed, .scroll-bar:vertical .decrement-button:pressed {
+    -fx-background-color: #1795b5;
+}
+
+.label, .smallButton, .popupButton {
+    -fx-font-weight: bold;
+}
+
+.listCellBackground {
+    -fx-background-color: #008fb3;
+}
+
+.listCellText {
+    -fx-text-fill: white;
+}
+
+.listCellText .text {
+    -fx-effect: dropshadow(one-pass-box, black, 4, 0, 0, 0);
+    -fx-stroke: black;
+}
+
+.logOutButton:hover, .hoverRed:hover {
+    -fx-background-color: #ff4251;
+}
+
+.menu-bar {
+    -fx-font-weight: lighter;
+}
+
+.paneBG {
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+}
+
+.scroll-bar .increment-arrow, .scroll-bar .decrement-arrow, .scroll-bar:vertical .increment-arrow,
+.scroll-bar:vertical .decrement-arrow, .check-box:selected .mark, .scroll-pane, .text-area {
+    -fx-background-color: white;
+}
+
+.scroll-bar:horizontal .increment-button, .scroll-bar:horizontal .decrement-button {
+    -fx-background-color: #1AA9CD;
+    -fx-background-radius: 10px;
+}
+
+.scroll-bar:horizontal .increment-button:hover, .scroll-bar:horizontal .decrement-button:hover,
+.scroll-bar:vertical .increment-button:hover, .scroll-bar:vertical .decrement-button:hover {
+    -fx-background-color: #126C82;
+}
+
+.scroll-bar:horizontal .thumb, .scroll-bar:vertical .thumb {
+    -fx-background-color: #1AA9CD;
+    -fx-background-radius: 2em;
+}
+
+.scroll-bar:horizontal .thumb:hover, .scroll-bar:vertical .thumb:hover {
+    -fx-background-color: #126C82;
+    -fx-background-radius: 2em;
+}
+
+.scroll-bar:horizontal.track, .scroll-bar:vertical.track {
+    -fx-background-color: white;
+    -fx-background-radius: 1em;
+    -fx-border-color: grey;
+    -fx-border-radius: 1.5em;
+}
+
+.scroll-bar:vertical .increment-button, .scroll-bar:vertical .decrement-button, .check-box:selected .box {
+    -fx-background-color: #1AA9CD;
+}
+
+.timeline {
+    -fx-background-color: #6C54F2;
+    -fx-effect: dropshadow(one-pass-box, #1AA9CD, 10, 0, 0, 0);
+}
+
+.tooltip {
+    -fx-background-color: #0E5E72;
+}

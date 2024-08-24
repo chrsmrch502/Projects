@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Polygon?>
+
+<GridPane fx:id="pane" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="1270.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.TimelineCell">
+    <columnConstraints>
+        <ColumnConstraints hgrow="ALWAYS" maxWidth="1.7976931348623157E308" prefWidth="1100.0" />
+        <ColumnConstraints maxWidth="-Infinity" minWidth="-Infinity" prefWidth="150.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints maxHeight="-Infinity" minHeight="0.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="290.0" minHeight="0.0" />
+      <RowConstraints maxHeight="-Infinity" minHeight="0.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="-Infinity" minHeight="0.0" vgrow="NEVER" />
+        <RowConstraints minHeight="0.0" vgrow="ALWAYS" />
+      <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="30.0" vgrow="NEVER" />
+    </rowConstraints>
+    <styleClass>
+        <String fx:value="paneBG" />
+        <String fx:value="listCellBackground" />
+    </styleClass>
+    <Label fx:id="title" styleClass="listCellText" text="xTitle" GridPane.halignment="LEFT" GridPane.valignment="CENTER">
+      <GridPane.margin>
+         <Insets left="1.0" />
+      </GridPane.margin>
+    </Label>
+   <Label fx:id="description" minHeight="0.0" style="-fx-wrap-text: true;" styleClass="listCellText" text="Description" GridPane.rowIndex="1">
+   </Label>
+   <Label fx:id="keywords" styleClass="listCellText" text="Keywords" GridPane.rowIndex="2">
+   </Label>
+   <Label fx:id="author" styleClass="listCellText" text="Author" GridPane.rowIndex="3" GridPane.valignment="TOP">
+   </Label>
+   <Region GridPane.hgrow="ALWAYS" GridPane.rowIndex="4" GridPane.vgrow="ALWAYS" />
+    <HBox fx:id="ratingBox" alignment="BOTTOM_RIGHT" prefHeight="30.0" prefWidth="300.0" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="5" GridPane.valignment="CENTER">
+        <padding>
+            <Insets bottom="5.0" right="5.0" />
+        </padding>
+        <Polygon fill="YELLOW" points="41.0, 40.0, 50.0, 40.0, 50.0, 31.0" stroke="BLACK" strokeType="INSIDE" />
+        <Polygon fill="YELLOW" points="50.0, 40.0, 50.0, 40.0, 56.0, 31.0" stroke="BLACK" strokeType="INSIDE" />
+        <Polygon fill="YELLOW" points="44.0, 40.0, 50.0, 40.0, 50.0, 31.0" stroke="BLACK" strokeType="INSIDE" />
+        <Polygon fill="YELLOW" points="37.0, 40.0, 50.0, 40.0, 28.0, 31.0" stroke="BLACK" strokeType="INSIDE" />
+        <Polygon fill="YELLOW" points="42.0, 40.0, 50.0, 40.0, 42.0, 26.0" stroke="BLACK" strokeType="INSIDE" />
+    </HBox>
+    <VBox fx:id="cellButtonBox" alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" spacing="20.0" GridPane.columnIndex="1" GridPane.rowSpan="5">
+        <GridPane.margin>
+            <Insets />
+        </GridPane.margin>
+        <Button onAction="#openTimeline" style="-fx-pref-height: 10" text="View" />
+        <Button fx:id="cellDeleteTimelineButton" onAction="#deleteTimeline" style="-fx-pref-height: 10" styleClass="DisabledInvisible" text="Delete" />
+    </VBox>
+   <opaqueInsets>
+      <Insets left="5.0" />
+   </opaqueInsets>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+</GridPane>

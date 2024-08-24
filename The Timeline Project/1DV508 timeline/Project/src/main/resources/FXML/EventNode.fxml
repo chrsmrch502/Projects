@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.Pane?>
+<Pane fx:id="displayPane" maxHeight="20.0" onMouseClicked="#openEventViewer" styleClass="eventNode"
+      xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.EventNode">
+    <Label alignment="CENTER" fx:id="eventNameDisplay" prefHeight="${displayPane.height}"
+           prefWidth="${displayPane.width}" styleClass="eventNode" text="Label">
+        <tooltip>
+            <Tooltip fx:id="hoverFlag" maxWidth="1000.0" wrapText="true"/>
+        </tooltip>
+    </Label>
+</Pane>

@@ -1,0 +1,178 @@
+.root,.eventEditor {
+    -fx-background-color:#2c2c2c;
+}
+
+.button,.toggle-button {
+    -fx-background-color:#d4862b;
+    -fx-background-radius:222px;
+    -fx-font-weight:bold;
+    -fx-text-fill:#ffffff;
+}
+
+.button:hover,.toggle-button:hover,.toggle-button:selected,.combo-box,.smallButton:hover,.popupButton:hover,
+.eventNode:hover,.eventNode:pressed,.tooltip,.list-view .list-cell:focused,.scroll-bar:vertical .increment-button,
+.scroll-bar:vertical .decrement-button,.scroll-bar:horizontal .increment-button:hover,
+.scroll-bar:horizontal .decrement-button:hover,.scroll-bar:vertical .increment-button:hover,
+.scroll-bar:vertical .decrement-button:hover,.scroll-bar:horizontal .increment-button:pressed,
+.scroll-bar:horizontal .decrement-button:pressed,.scroll-bar:vertical .increment-button:pressed,
+.scroll-bar:vertical .decrement-button:pressed,.check-box:selected .box,.listCellBackground {
+    -fx-background-color:#d4862b;
+}
+
+.check-box .box {
+    -fx-background-color:#81817e;
+    -fx-border-color:grey;
+    -fx-border-radius:3px;
+}
+
+.combo-box-base,.combo-box-base .list-cell {
+    -fx-background-radius:5;
+}
+
+.headertext,.smallText,.mediumText,.list-cell,.check-box,.listCellText {
+    -fx-text-fill:#ffffff;
+}
+
+.label {
+    -fx-font-weight:bold;
+    -fx-text-fill:#ffffff;
+}
+
+.listCellText .text {
+    -fx-effect:dropshadow(one-pass-box,black,4,0,0,0);
+    -fx-stroke:black;
+}
+
+.logOutButton:hover,.hoverRed:hover {
+    -fx-background-color:#ff4251;
+}
+
+.menu {
+    -fx-background-color:#3d3d3d;
+}
+
+.menu-bar {
+    -fx-background-color:#3d3d3d;
+    -fx-border-color:#81817e;
+    -fx-font-weight:lighter;
+}
+
+.menu-item,.context-menu {
+    -fx-background-color:#81817e;
+    -fx-border-color:#81817e;
+}
+
+.scroll-bar .increment-arrow,.scroll-bar .decrement-arrow,.scroll-bar:vertical .increment-arrow,
+.scroll-bar:vertical .decrement-arrow {
+    -fx-background-color:#ffffff;
+}
+
+.scroll-bar:horizontal .increment-button,.scroll-bar:horizontal .decrement-button {
+    -fx-background-color:#d4862b;
+    -fx-background-radius:10px;
+}
+
+.scroll-bar:horizontal .thumb,.scroll-bar:vertical .thumb,.scroll-bar:horizontal .thumb:hover,
+.scroll-bar:vertical .thumb:hover {
+    -fx-background-color:#d4862b;
+    -fx-background-radius:2em;
+}
+
+.scroll-bar:horizontal.track,.scroll-bar:vertical.track {
+    -fx-background-color: #ffffff;
+    -fx-background-radius:1em;
+    -fx-border-color:grey;
+    -fx-border-radius:1.5em;
+}
+
+.scroll-pane .content,.text-area .content {
+    -fx-background-color:#81817e;
+    -fx-cursor:AUTO;
+}
+
+.scroll-pane .viewport{
+    -fx-background-color:#2c2c2c;
+}
+
+.timelineView .viewport,.list-view .corner,border-pane,.smallTextArea,.list-view,.list-view .list-cell:even,
+.list-view .list-cell:odd,.scroll-bar:vertical,.scroll-bar:horizontal,.check-box:selected .mark,.paneBG {
+    -fx-background-color:#81817e;
+}
+
+.scroll-pane,.text-area {
+    -fx-background-insets:0;
+    -fx-background-radius:0 0 0 0;
+    -fx-padding: 0;
+    -fx-faint-focus-color: #ffffff;
+    -fx-focus-color: #ffffff;
+}
+
+.scroll-pane:focused,.text-area:focused {
+    -fx-background-insets:0;
+    -fx-background-radius:0 0 0 0;
+    -fx-padding: 0;
+    -fx-faint-focus-color:0;
+    -fx-focus-color:#ffffff;
+    -fx-highlight-fill:#d4862b;
+}
+
+.smallButton,.popupButton {
+    -fx-font-weight:bold;
+}
+
+.smallText .axis {
+    -fx-tick-label-fill:#ffffff;
+}
+
+.text-area:focused .content {
+    -fx-background-color:#81817e;       /*used to be transparent, #81817e, transparent, #81817e but that was messing with attempts to read it in java*/
+}
+
+.text-field {
+    -fx-background-color:#81817e;
+    -fx-cursor:DEFAULT;
+}
+
+.text-input {
+    -fx-cursor:DEFAULT;
+    -fx-text-fill:#ffffff;
+}
+
+.textStyle {
+    -fx-fill:#ffffff;
+}
+
+.timeline {
+    -fx-background-color:#d4862b;
+    -fx-effect:dropshadow(one-pass-box,#e3481c,10,0,0,0);
+}
+
+.viewport {
+    -fx-background-color:#81817e;       /*used to be transparent, #81817e, transparent, #81817e but that was messing with attempts to read it in java*/
+    -fx-background-insets:0;
+    -fx-background-radius:0 0 0 0;
+    -fx-border-width:-1;
+    -fx-faint-focus-color:0;
+    -fx-focus-color:0;
+}
+
+stack-pane {
+    -fx-background-color:#81817e;
+    -fx-border-color:#2c2c2c;
+}
+
+.eventNode {
+    -fx-background-color:#d4862b;
+    -fx-effect:dropshadow(one-pass-box,#e3481c,4,0,0,0);
+    -fx-font-weight:bold;
+    -fx-text-fill:#ffffff;
+}
+
+.spinner, .spinner .text-field, .slider .thumb{
+    -fx-background-color: rgb(76, 76, 76);
+}
+
+.slider .track {
+    -fx-background-color: #e5e5e5;
+    -fx-scale-y: .75;
+}

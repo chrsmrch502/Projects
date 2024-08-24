@@ -1,0 +1,24 @@
+.DisabledAnyways,.DisabledAnyways > * {
+    -fx-opacity:.4 !important;
+}
+
+.spinner:disabled .decrement-arrow-button {
+    -fx-padding:2 7 5 7;
+}
+
+.spinner:disabled .increment-arrow-button {
+    -fx-padding:3 7 3 7;
+}
+
+.spinner:disabled .increment-arrow-button .increment-arrow,.spinner:disabled .decrement-arrow-button .decrement-arrow {
+    -fx-padding:0;
+}
+
+.text-field,.text-area {
+    -fx-focus-color:transparent;
+    -fx-text-box-border:transparent;
+}
+
+:disabled,:disabled > * {
+    -fx-opacity:1;
+}
