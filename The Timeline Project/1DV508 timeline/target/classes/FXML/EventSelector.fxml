@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<GridPane fx:id="selector" alignment="CENTER_RIGHT" hgap="5" prefHeight="572.0" prefWidth="325.0" vgap="5"
+          xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+          fx:controller="controllers.EventSelector">
+    <columnConstraints>
+        <ColumnConstraints maxWidth="-Infinity" minWidth="-Infinity" prefWidth="150.0"/>
+        <ColumnConstraints maxWidth="-Infinity" minWidth="-Infinity" prefWidth="150.0"/>
+    </columnConstraints>
+    <padding>
+        <Insets bottom="10" left="10" right="10" top="10"/>
+    </padding>
+    <Button alignment="CENTER" contentDisplay="CENTER" onAction="#clearTimelineSelection" styleClass="tinyButton"
+            text="All Events" GridPane.columnIndex="1" GridPane.halignment="CENTER"/>
+    <ComboBox fx:id="timelineComboBox" prefWidth="150.0" promptText="Timeline"/>
+    <ComboBox fx:id="sortBy" prefWidth="150.0" promptText="Sort By" GridPane.rowIndex="1"/>
+    <TextField fx:id="searchInput" promptText="Search..." GridPane.rowIndex="2"/>
+    <ListView fx:id="eventListView" maxHeight="1.7976931348623157E308" prefHeight="300.0" prefWidth="200.0"
+              GridPane.columnSpan="2" GridPane.rowIndex="3" GridPane.vgrow="SOMETIMES"/>
+    <Button fx:id="newButton" alignment="CENTER" disable="true" maxHeight="30" onAction="#newEvent"
+            styleClass="smallButton" text="New Event" GridPane.halignment="CENTER" GridPane.rowIndex="5"/>
+    <Button fx:id="viewButton" alignment="CENTER" disable="true" maxHeight="30" onAction="#openEvent"
+            styleClass="smallButton" text="View Event" GridPane.columnIndex="1" GridPane.halignment="CENTER"
+            GridPane.rowIndex="5"/>
+    <Button fx:id="deleteButton" alignment="CENTER" disable="true" maxHeight="30" onAction="#deleteButton"
+            styleClass="smallButton" text="Delete Event" GridPane.columnIndex="1" GridPane.halignment="CENTER"
+            GridPane.rowIndex="6"/>
+    <Button fx:id="addToRemoveFromTimelineButton" alignment="CENTER" disable="true" maxHeight="30"
+            onAction="#addRemoveTimeline" styleClass="smallButton" text="Add To Timeline" GridPane.halignment="CENTER"
+            GridPane.rowIndex="6">
+        <tooltip>
+            <Tooltip text="Adds the selected event to the active timeline."/>
+        </tooltip>
+    </Button>
+</GridPane>

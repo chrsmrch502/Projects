@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<?import java.lang.*?>
+<HBox fx:id="editor" alignment="CENTER" minWidth="1.0" prefHeight="1200.0" xmlns="http://javafx.com/javafx/11.0.1"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.TimelineEditor">
+    <VBox alignment="CENTER" spacing="5.0">
+        <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+        </padding>
+        <ScrollPane fitToWidth="true" styleClass="editorScrollPane" VBox.vgrow="SOMETIMES">
+            <GridPane alignment="CENTER_RIGHT" hgap="5" maxHeight="1.7976931348623157E308" vgap="5">
+                <columnConstraints>
+                    <ColumnConstraints maxWidth="150.0" prefWidth="150"/>
+                    <ColumnConstraints maxWidth="150.0" prefWidth="150"/>
+                </columnConstraints>
+                <rowConstraints>
+                    <RowConstraints prefHeight="200.0"/>
+                    <RowConstraints minHeight="-Infinity" prefHeight="30.0"/>
+                    <RowConstraints/>
+                    <RowConstraints/>
+                    <RowConstraints/>
+                    <RowConstraints vgrow="SOMETIMES"/>
+                    <RowConstraints/>
+                    <RowConstraints/>
+                    <RowConstraints minHeight="50.0" prefHeight="30.0"/>
+                </rowConstraints>
+                <ImageView fx:id="image" fitHeight="200.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true"
+                           GridPane.columnSpan="2" GridPane.halignment="CENTER"/>
+                <Button fx:id="uploadImageButton" alignment="CENTER" onAction="#uploadImage" prefWidth="80.0"
+                        styleClass="DisabledInvisible" text="Upload img" GridPane.halignment="RIGHT"
+                        GridPane.rowIndex="1">
+                    <styleClass>
+                        <String fx:value="tinyButton"/>
+                        <String fx:value="DisabledInvisible"/>
+                    </styleClass>
+                    <GridPane.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                    </GridPane.margin>
+                </Button>
+                <Button fx:id="deleteImageButton" alignment="CENTER" onAction="#clearImage" prefWidth="80.0"
+                        styleClass="DisabledInvisible" text="Delete img" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                    <styleClass>
+                        <String fx:value="tinyButton"/>
+                        <String fx:value="DisabledInvisible"/>
+                    </styleClass>
+                    <GridPane.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                    </GridPane.margin>
+                </Button>
+                <Label styleClass="smallText" text="Title" GridPane.columnSpan="2" GridPane.rowIndex="2"
+                       GridPane.valignment="BOTTOM"/>
+                <TextField fx:id="titleInput" GridPane.columnSpan="2" GridPane.rowIndex="3"/>
+                <Label styleClass="smallText" text="Description" GridPane.columnSpan="2" GridPane.rowIndex="4"
+                       GridPane.valignment="BOTTOM"/>
+                <TextArea fx:id="descriptionInput" maxHeight="1.7976931348623157E308" minHeight="0.0" prefHeight="250.0"
+                          styleClass="smallText" wrapText="true" GridPane.columnSpan="2" GridPane.rowIndex="5"/>
+                <Label styleClass="smallText" text="Key Words" GridPane.rowIndex="6" GridPane.valignment="BOTTOM"/>
+                <Label fx:id="feedbackText" layoutX="10.0" layoutY="629.0" style="-fx-font-weight: normal;"
+                       styleClass="smallText" GridPane.columnIndex="1" GridPane.rowIndex="6"/>
+                <HBox fx:id="keywordBox" spacing="5.0" GridPane.columnSpan="2" GridPane.rowIndex="7">
+                    <TextField fx:id="keywordInput" onAction="#addKeyword" HBox.hgrow="SOMETIMES"/>
+                    <Button maxWidth="47.0" onAction="#addKeyword" prefWidth="47.0" text="Add">
+                        <font>
+                            <Font size="10.0"/>
+                        </font>
+                        <styleClass>
+                            <String fx:value="tinyButton"/>
+                            <String fx:value="DisabledInvisible"/>
+                        </styleClass>
+                    </Button>
+                    <Button maxWidth="67.0" onAction="#removeKeyword" prefWidth="67.0" text="Remove">
+                        <font>
+                            <Font size="10.0"/>
+                        </font>
+                        <styleClass>
+                            <String fx:value="tinyButton"/>
+                            <String fx:value="DisabledInvisible"/>
+                        </styleClass>
+                    </Button>
+                </HBox>
+                <ListView fx:id="keywordView" minHeight="50.0" prefHeight="200.0" prefWidth="200.0"
+                          GridPane.columnSpan="2" GridPane.rowIndex="8" GridPane.vgrow="SOMETIMES"/>
+                <Label styleClass="smallText" text="Start:" GridPane.columnSpan="2" GridPane.rowIndex="9"
+                       GridPane.valignment="BOTTOM"/>
+                <FlowPane fx:id="startPane" alignment="CENTER_LEFT" hgap="5.0" GridPane.columnSpan="2"
+                          GridPane.rowIndex="10">
+                    <Button alignment="CENTER" ellipsisString="" maxWidth="60.0" minWidth="60.0"
+                            onAction="#toggleStartExpanded" styleClass="tinyButton" text="more..."
+                            textAlignment="CENTER">
+                        <FlowPane.margin>
+                            <Insets left="7.0" top="18.0"/>
+                        </FlowPane.margin>
+                        <tooltip>
+                            <Tooltip text="Display more/fewer date fields."/>
+                        </tooltip>
+                    </Button>
+                </FlowPane>
+                <HBox alignment="BOTTOM_LEFT" spacing="5.0" GridPane.rowIndex="11" GridPane.valignment="BOTTOM">
+                    <Label contentDisplay="RIGHT" styleClass="smallText" text="End"/>
+                </HBox>
+                <FlowPane fx:id="endPane" alignment="CENTER_LEFT" hgap="5.0" GridPane.columnSpan="2"
+                          GridPane.rowIndex="12">
+                    <Button alignment="CENTER" ellipsisString="" maxWidth="60.0" minWidth="60.0"
+                            onAction="#toggleEndExpanded" styleClass="tinyButton" text="more..." textAlignment="CENTER">
+                        <FlowPane.margin>
+                            <Insets left="7.0" top="18.0"/>
+                        </FlowPane.margin>
+                        <tooltip>
+                            <Tooltip text="Display more/fewer date fields."/>
+                        </tooltip>
+                    </Button>
+                </FlowPane>
+                <Label styleClass="smallText" text="Time Unit" GridPane.rowIndex="13"/>
+                <ComboBox fx:id="timeInput" prefWidth="150.0" GridPane.rowIndex="14"/>
+            </GridPane>
+        </ScrollPane>
+        <Region minHeight="0.0" prefHeight="0.0" VBox.vgrow="ALWAYS"/>
+        <GridPane hgap="5.0" vgap="5.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="50.0"/>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="50.0"/>
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints/>
+                <RowConstraints prefHeight="30.0"/>
+            </rowConstraints>
+            <Button fx:id="saveEditButton" alignment="CENTER" maxHeight="30" onAction="#saveEditButton" text="Edit"
+                    GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                <styleClass>
+                    <String fx:value="smallButton"/>
+                    <String fx:value="DisabledInvisible"/>
+                </styleClass>
+            </Button>
+            <Button fx:id="deleteButton" alignment="CENTER" maxHeight="30" onAction="#deleteTimeline" text="Delete"
+                    GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1"
+                    GridPane.valignment="CENTER">
+                <styleClass>
+                    <String fx:value="smallButton"/>
+                    <String fx:value="DisabledInvisible"/>
+                </styleClass>
+            </Button>
+            <Button fx:id="exportButton" alignment="CENTER" maxHeight="30" onAction="#openExportMenu"
+                    styleClass="smallButton" text="Export" GridPane.columnIndex="1" GridPane.halignment="CENTER"
+                    GridPane.valignment="CENTER">
+                <contextMenu>
+                    <ContextMenu fx:id="exportPopup" style="-fx-font-size: 10;">
+                        <items>
+                            <MenuItem fx:id="exportJSONButton" onAction="#jsonExport" styleClass="DisabledInvisible"
+                                      text="Export as JSON"/>
+                            <MenuItem onAction="#snapshotEntireTimeline" text="Snapshot Timeline"/>
+                            <MenuItem onAction="#snapshotCurrentView" text="Snapshot Current View"/>
+                        </items>
+                    </ContextMenu>
+                </contextMenu>
+            </Button>
+        </GridPane>
+    </VBox>
+</HBox>

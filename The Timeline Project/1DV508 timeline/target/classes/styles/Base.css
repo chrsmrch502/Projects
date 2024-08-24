@@ -1,0 +1,149 @@
+.DisabledInvisible:disabled, .DisabledInvisible:disabled > * {
+    -fx-opacity: 0 !important;
+}
+
+.button, .toggle-button {
+    -fx-font-size: 2em;
+    -fx-pref-height: 100px;
+    -fx-pref-width: 250px;
+}
+
+.button:hover, .toggle-button:hover, .toggle-button:selected, .smallButton:hover,
+.logOutButton:hover, .popupButton:hover, .hoverRed:hover {
+    -fx-scale-y: 1.1;
+}
+
+.dashBoard {
+    -fx-pref-height: 60px;
+}
+
+
+.eventNode {
+    -fx-font-size: 1em;
+    -fx-pref-height: 60px;
+    -fx-pref-width: 150px;
+}
+
+.headertext {
+    -fx-font-size: 24;
+}
+
+.label {
+    -fx-font-size: 1.5em;
+    -fx-font-weight: bold;
+    -fx-padding: 5 0 0 0;
+}
+
+.listCellText {
+    -fx-font-size: 26;
+}
+
+.listCellText .text {
+    -fx-stroke-width: 1px;
+}
+
+.mediumText {
+    -fx-font-size: 1.5em;
+}
+
+.menu-bar {
+    -fx-font-size: .6em;
+}
+
+.noScrollingListView .list-view .scroll-bar:vertical, .noScrollingListView .list-view .scroll-bar:horizontal,
+.noScrollingListView .list-view .scroll-bar:horizontal .increment-arrow,
+.noScrollingListView .list-view .scroll-bar:horizontal .decrement-arrow,
+.noScrollingListView .list-view .scroll-bar:horizontal .increment-button,
+.noScrollingListView .list-view .scroll-bar:horizontal .decrement-button {
+    -fx-max-height: 0;
+    -fx-min-height: 0;
+    -fx-opacity: 1;
+    -fx-padding: -10;
+    -fx-pref-height: 0;
+    -fx-scale-x: 0;
+    -fx-scale-y: 0;
+}
+
+.paneBG {
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+}
+
+.popupButton {
+    -fx-font-size: 1.3em;
+    -fx-font-weight: bold;
+    -fx-pref-height: 35px;
+    -fx-pref-width: 90px;
+}
+
+.scroll-bar:horizontal .increment-button, .scroll-bar:horizontal .decrement-button {
+    -fx-pref-height: 18px;
+    -fx-pref-width: 18px;
+}
+
+.scroll-bar:horizontal .thumb, .scroll-bar:vertical .thumb, .scroll-bar:horizontal .thumb:hover, .scroll-bar:vertical .thumb:hover {
+    -fx-background-insets: 2.0, 0 0.0;
+}
+
+.scroll-bar:vertical .increment-button, .scroll-bar:vertical .decrement-button {
+    -fx-pref-height: 15px;
+    -fx-pref-width: 15px;
+}
+
+.slider .axis {
+    -fx-font-size: 7;
+}
+
+.slider .axis > *, .slider:disabled .axis > * {
+    -fx-opacity: 1 !important;
+}
+
+.smallButton {
+    -fx-font-size: 1.3em;
+    -fx-font-weight: bold;
+    -fx-pref-height: 50px;
+    -fx-pref-width: 150px;
+}
+
+.smallText {
+    -fx-font-size: 1em;
+}
+
+.smallTextArea {
+    -fx-pref-height: 40px;
+}
+
+.spinner .increment-arrow-button .increment-arrow, .spinner .decrement-arrow-button .decrement-arrow {
+    -fx-padding: 2 3 2 3;
+}
+
+.spinner .increment-arrow-button, .spinner .decrement-arrow-button {
+    -fx-padding: 2 4 2 4;
+}
+
+.text-area {
+    -fx-font-size: 15px;
+    -fx-pref-height: 105px;
+    -fx-pref-width: 400px;
+    -fx-wrap-text: true;
+}
+
+.text-field {
+    -fx-pref-height: 30px;
+}
+
+.tinyButton {
+    -fx-font-size: 12;
+    -fx-pref-height: 25px;
+    -fx-pref-width: 90px;
+}
+
+.tinyDashboard {
+    -fx-font-size: 14px;
+    -fx-pref-height: 25px;
+    -fx-pref-width: 180px;
+}
+
+Text {
+    -fx-font-size: 1.75em;
+}

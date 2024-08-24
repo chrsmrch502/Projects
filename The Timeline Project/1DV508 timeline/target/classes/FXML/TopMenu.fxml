@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.TopMenu">
+    <MenuBar maxHeight="25.0">
+        <Menu fx:id="loggedInStatus" text="Not logged in">
+            <MenuItem onAction="#logOutPressed" text="Log Out" />
+        </Menu>
+        <Menu text="Theme">
+            <MenuItem onAction="#styleDefaultPressed" text="Default"/>
+            <MenuItem onAction="#styleLightPressed" text="Light"/>
+            <MenuItem onAction="#styleDarkPressed" text="Dark"/>
+            <MenuItem onAction="#styleBluePressed" text="Blue"/>
+            <MenuItem onAction="#styleMaroonPressed" text="Maroon"/>
+        </Menu>
+    </MenuBar>
+</HBox>

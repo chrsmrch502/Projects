@@ -1,0 +1,137 @@
+.root, .eventEditor, .scroll-pane, .scroll-pane .viewport {
+    -fx-background-color: #390325;
+}
+
+.button, .toggle-button {
+    -fx-background-color: #713E5F;
+    -fx-background-radius: 222px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+.button:hover, .toggle-button:hover, .toggle-button:selected, .smallButton:hover, .popupButton:hover,
+.eventNode:hover, .scroll-bar:horizontal .increment-button:hover, .scroll-bar:horizontal .decrement-button:hover,
+.scroll-bar:vertical .increment-button:hover, .scroll-bar:vertical .decrement-button:hover {
+    -fx-background-color: #872539;
+}
+
+.check-box .box {
+    -fx-background-color: #e5e0ee;
+    -fx-border-color: grey;
+    -fx-border-radius: 3px;
+}
+
+.combo-box-base, .list-cell:filled:selected .text {
+    -fx-background-color: #713E5F;
+    -fx-fill: white;
+}
+
+.date-picker-popup .button {
+    -fx-background-color: 0 0 0;
+    -fx-background-radius: 222;
+    -fx-color: transparent;
+}
+
+.eventNode:pressed, .scroll-bar:horizontal .increment-button:pressed, .scroll-bar:horizontal .decrement-button:pressed,
+.scroll-bar:vertical .increment-button:pressed, .scroll-bar:vertical .decrement-button:pressed {
+    -fx-background-color: #AF314C;
+}
+
+.hyperlink .text {
+    -fx-color: white;
+}
+
+.label, .label .text {
+    -fx-fill: white;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+.list-view {
+    -fx-background-color: #e5e0ee;
+}
+
+.listCellText .text {
+    -fx-effect: dropshadow(one-pass-box, black, 4, 0, 0, 0);
+    -fx-stroke: black;
+}
+
+.logOutButton:hover, .hoverRed:hover {
+    -fx-background-color: #ff4251;
+}
+
+.menu {
+    -fx-background-fill: #5E7B8A;
+    -fx-font-weight: lighter;
+}
+
+.menu-bar, .menu-item, .context-menu, .list-cell:filled:hover, .menu-bar:hover, .menu-bar:selected, .menu-bar:focused,
+.list-cell:hover, .scroll-bar:vertical .increment-button, .scroll-bar:vertical .decrement-button, .list-view:focused, .listCellBackground {
+    -fx-background-color: #390325;
+}
+
+.menu-item:hover, .menu:hover, .menu:showing, .menu-item:focused, .list-view:focused, .list-view:selected {
+    -fx-background-color: #445963;
+}
+
+.scroll-bar .increment-arrow, .scroll-bar .decrement-arrow, .scroll-bar:vertical .increment-arrow,
+.scroll-bar:vertical .decrement-arrow, .spinner .increment-arrow-button .increment-arrow,
+.spinner .decrement-arrow-button .decrement-arrow, .combo-box-base .arrow-button .arrow, .check-box:selected .mark,
+.text-area, .timelineView .viewport {
+    -fx-background-color: #ffffff;
+}
+
+.scroll-bar:horizontal .increment-button, .scroll-bar:horizontal .decrement-button {
+    -fx-background-color: #5E7B8A;
+    -fx-background-radius: 10px;
+}
+
+.scroll-bar:horizontal .thumb, .scroll-bar:vertical .thumb, .scroll-bar:horizontal .thumb:hover,
+.scroll-bar:vertical .thumb:hover {
+    -fx-background-color: #5E7B8A;
+    -fx-background-radius: 2em;
+}
+
+.scroll-bar:horizontal.track, .scroll-bar:vertical.track {
+    -fx-background-color: #390325;
+    -fx-background-radius: 1em;
+    -fx-border-color: grey;
+    -fx-border-radius: 1.5em;
+}
+
+.check-box, .listCellText {
+    -fx-text-fill: #e5e0ee;
+}
+
+.slider .axis {
+    -fx-text-fill: white;
+    -fx-tick-label-fill: white;
+}
+
+.smallButton, .popupButton {
+    -fx-font-weight: bold;
+}
+
+.spinner .increment-arrow-button, .spinner .decrement-arrow-button, .check-box:selected .box {
+    -fx-background-color: #713E5F;
+}
+
+.textStyle, .smallText {
+    -fx-fill: white;
+}
+
+.timeline {
+    -fx-background-color: #DB5572;
+    -fx-effect: dropshadow(one-pass-box, #713E5F, 10, 0, 0, 0);
+}
+
+.tooltip {
+    -fx-background-color: #601B2B;
+}
+
+.eventNode {
+    -fx-background-color: #713E5F;
+    -fx-effect: dropshadow(one-pass-box, #DB5572, 4, 0, 0, 0);
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}

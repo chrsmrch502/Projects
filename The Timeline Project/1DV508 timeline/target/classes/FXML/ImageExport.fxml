@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0"
+      prefWidth="1024.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="controllers.ImageExport">
+    <VBox layoutX="810.0" layoutY="194.0" spacing="10.0" style="-fx-border-style: solid;">
+        <CheckBox fx:id="checkboxName" alignment="TOP_LEFT" contentDisplay="TOP" onAction="#burnIn" prefHeight="18.0"
+                  prefWidth="165.0" text="Name">
+            <padding>
+                <Insets left="5.0"/>
+            </padding>
+        </CheckBox>
+        <CheckBox fx:id="checkboxRange" onAction="#burnIn" prefHeight="18.0" prefWidth="165.0" text="Range">
+            <padding>
+                <Insets left="5.0"/>
+            </padding>
+        </CheckBox>
+        <CheckBox fx:id="checkboxCreator" onAction="#burnIn" prefHeight="18.0" prefWidth="165.0" text="Creator">
+            <padding>
+                <Insets left="5.0"/>
+            </padding>
+        </CheckBox>
+        <CheckBox fx:id="checkboxLogo" onAction="#burnIn" prefHeight="18.0" prefWidth="165.0" selected="true"
+                  text="Logo">
+            <padding>
+                <Insets left="5.0"/>
+            </padding>
+        </CheckBox>
+        <padding>
+            <Insets bottom="10.0" top="10.0"/>
+        </padding>
+    </VBox>
+    <Button layoutX="818.0" layoutY="353.0" onAction="#saveImage" styleClass="smallButton" text="Export"/>
+    <ImageView fx:id="imageView" fitHeight="492.0" fitWidth="718.0" layoutX="70.0" layoutY="72.0" pickOnBounds="true"
+               preserveRatio="true"/>
+    <Button layoutX="818.0" layoutY="420.0" onAction="#close" styleClass="smallButton" text="Close"/>
+</Pane>
